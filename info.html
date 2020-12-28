@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
+    <title>Info</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
+        <div class="topnav" id="myTopnav">
+                    <a href="bokaresa.html" >BOKA RESOR</a>
+                    <a href="minasidor.html" >MINA SIDOR</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                    <div class="dropdown">                  
+                    <button class="dropbtn" id="dropbtn">INFO 
+                        <i class="fas fa-caret-down"></i> 
+                    </button>                  
+                         <div class="dropdown-content">
+                            <a href="#färdtjänst">Färdtjänst</a>
+                            <a href="#vemKanFå">Vem kan få färdtjänst</a>
+                            <a href="#färdtjänsttillståndet">Färdtjänsttillstånd</a>
+                            <a href="#när">När kan man resa med färdtjänst</a>
+                            <a href="#beställning">Beställning</a>
+                            <a href="#avbeställning">Avbeställning</a>
+                            <a href="#betalning">Betalning</a>
+                            <a href="#chaufförenHjälper">Chauffören hjälper dig</a>
+                            <a href="#utrustningBagage">Utrustning och bagage</a>
+                            <a href="#ledsagare">Ledsagare/medresenär/husdjur</a>
+                            <a href="#region">Regionfärdtjänstresa </a>
+                            <a href="#riks">Riksfärdtjänstresa</a>
+                            <a href="#vadkostar">Vad kostar en färdtjänstresa</a>
+                           </div>                 
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Sök på färdtjänst" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+        </div>
+    
+    </header>
+    <div class="maincontent">
+        <h1 class="bokaresaHeading">SÅ HÄR FUNKAR FÄRDTJÄNST</h1>
+        <article id="färdtjänst">
+            <h2>Färdtjänst</h2>
+            <p>Färdtjänst är en del av kollektivtrafiken som beviljas efter individuell prövning, enligt
+                lagen om färdtjänst. Du kan beviljas färdtjänst om du har en funktionsnedsättning som
+                gör att du har väsentliga svårigheter att förflytta dig på egen hand eller att resa med
+                allmänna kommunikationer.
+                Det finns olika alternativ, beroende på funktionsnedsättningen, hur du kan resa med
+                färdtjänsten. Ett färdtjänsttillstånd kan vara så beviljat att delar av resan sker med
+                allmänna kommunikationer. Resan samordnas med andra resenären och gör inga stopp
+                under resan.</p>
+        </article>
+        <article id="vemKanFå">
+            <h2>Vem kan få färdtjänst?</h2>
+            <p>Färdtjänst beviljas av den kommun där du 
+                är folkbokförd. Det är funktionsnedsättningen
+                som avgör om du kan få färdtjänst. Funktions-
+                nedsättningen ska ha en varaktighet om
+                minst tre månader. Avsaknad av körkort, hög 
+                ålder eller att det inte finns bussförbindelser
+                är inte något skäl till att beviljas färdtjänst. 
+                Vill du ansöka om färdtjänst vänd dig till
+                färdtjänsthandläggaren i din kommun.</p>
+        </article>
+        <article id="färdtjänsttillståndet">
+            <h2>Färdtjänsttillståndet</h2>
+            <p>Färdtjänsttillståndet är personligt och får inte 
+                användas på annat sätt än beslutat. Du måste 
+                vid resa kunna visa upp giltig legitimation. Om 
+                det sker förändringar i ditt hälsotillstånd eller om 
+                du ska flytta ska kommunens färdtjäns-
+                thandläggare kontaktas. Om du flyttar till en annan 
+                kommun upphör färdtjänsttillståndet att gälla..</p>
+        </article>
+        <h1 id="resinfo">SÅ HÄR GÅR DET TILL ATT RESA MED FÄRDTJÄNST   </h1>
+        <article id="när">
+            <h2>När kan du åka färdtjänst?</h2>
+            <p>Du kan resa med färdtjänst alla dagar kl. 05.00-02.00.</p>
+        </article>
+        <article id="beställning">
+            <h2>Beställning</h2>
+            <p>Beställ resan i god tid, tidigast 14 dagar 
+                och senast en timma före önskad avresa.</p>
+        </article>
+        <article id="avbeställning">
+            <h2>Avbeställning</h2>
+            <p>Resan ska avbeställas senast 2 timmar
+                innan den skulle ha påbörjats.
+                Vid sen avbokning kan du debiteras
+                för resan.</p>
+        </article>
+        <article id="betalning">
+            <h2>Betalning</h2>
+            <p>Du betalar resan kontant eller genom 
+                att du får en faktura. 
+                Priset beror på hur många kommuner
+                resan går genom.</p>
+        </article>
+        <article id="chaufförenHjälper">
+            <h2>Chauffören hjälper dig</h2>
+            <p>Du kan få hjälp att ta dig till och från
+                porten, att ta dig in och ur bilen, att få av
+                och på säkerhetsbältet och att ta hand om
+                ditt förflyttningshjälpmedel och bagage</p>
+        </article>
+        <article id="utrustningBagage">
+            <h2>Utrustning och bagage</h2>
+            <p>Du får ta med dig det hjälpmedel som du
+                behöver för att resa, t.ex. rollator eller
+                rullstol samt bagage motsvarande en
+                kasse i varje hand eller en resväska.</p>
+        </article>
+        <article id="ledsagare">
+            <h2>Ledsagare/medresenär/husdjur</h2>
+            <p>Beviljad ledsagare får åka med utan avgift
+                för att hjälpa dig till och från fordonet samt
+                under färden. Ledsagaren ska alltid påbörja
+                och avsluta sin resa på samma adress som
+                du och inte själv ha tillstånd till färdtjänst.
+                Du får ta med dig en medresenär på resan.
+                Medresenären ska alltid påbörja och
+                avsluta resan på samma adress som du.
+                Medresenären betalar avgift för sig själv
+                enligt färdtjänsttaxan.
+                Ledar- och assistanshund följer med utan
+                kostnad. Övriga husdjur får inte följa med.</p>
+        </article>
+        <article id="region">
+            <h2>Regionfärdtjänstresa</h2>
+            <p>Du som har färdtjänsttillstånd utan be-
+                gränsningar kan registrera dig för region-
+                färdtjänst hos färdtjänsthandläggaren.
+                Då kan du göra tio enkelresor under en
+                12-månadersperiod till och från samt inom
+                de kommuner i Västra Götalands län som
+                inte nämns i avsnittet ”Var får jag resa?” </p>
+        </article>
+        <article id="riks">
+            <h2>Riksfärdtjänstresa</h2>
+            <p>Riksfärdtjänstresa beviljas efter prövning
+                enligt lagen om Riksfärdtjänst och sker i första
+                hand med allmänna kommunikationer. (t.ex.
+                tåg och buss). Beviljad färdtjänst berättigar
+                inte automatiskt till riksfärdtjänst. Mer in-
+                formation finns hos färdtjänsthandläggaren</p>
+        </article>
+        <article id="vadkostar">
+            <h2>Vad kostar en färdtjästresa?</h2>
+            <table>
+                <tr>
+                    <th>Enkel resa inom</th>
+                    <th>Vuxen</th>
+                    <th>Ungdom</th>
+                </tr>
+                <tr>
+                    <td>En kommun</td>
+                    <td>80 kr</td>
+                    <td>40 kr</td>
+                </tr>
+                <tr>
+                    <td>Två kommun</td>
+                    <td>105 kr</td>
+                    <td>78 kr</td>
+                </tr>
+                <tr>
+                    <td>Tre kommun</td>
+                    <td>150 kr</td>
+                    <td>112 kr</td>
+                </tr>
+                <tr>
+                    <td>Fyra kommun</td>
+                    <td>194 kr</td>
+                    <td>146 kr</td>
+                </tr>
+            </table>
+        </article>
+    </div>
+    <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
+    <footer id="footer">
+        <div>
+        <p id="footerrubrik">Skara kommun</p>
+        <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
+        <p id="tillg">Tillgänglighetsredogörelse</p>
+        <div id="socialicons"><i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
+    <title>loggain</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="text färdtjänst">
+        <button id="contact">Kontakt</button>
+        <nav class="mainnav">
+            <ul class="logonavlist">
+                <li>
+                    Ny användare
+                </li>
+                <li>
+                    <a href="bokaresa.html" class="menyaktiv">Logga in</a>
+                     
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="maincontent">
+        <div id="infotext">Här kan du se alla dina bokade resor och vid behov avboka dem. 
+            Du kan också boka nya färdtjänstresor dygnet runt.
+        </div>
+        <fieldset>
+            <legend><i class="fas fa-user"></i></legend>
+            <h2 id="loginlösen">Logga in med lösenord</h2>
+            <label for="personr">Personnummer</label>
+            <input id="personr" type="text"  name="personnummer" placeholder="yy-mm-dd" 
+            required="required">
+            <label for="lösen">Lösenord</label>
+            <input type="password" id="lösen"  name="lösenord" placeholder="Lösenord">
+            <input type="submit" name="Logga in">
+        </fieldset>
+        <fieldset>
+            <legend><i class="fas fa-user"></i></legend>
+            <h2 id="loginbank">Logga in med bank-id</h2>
+            <label for="bankpersnr">Personnummer</label>
+            <input type="text" name="personnummer" id="bankpersnr" placeholder="yy-mm-dd" 
+            required="required">
+            <input type="submit" name="Bank id" value="Bank id på denna enhet">
+            <input type="submit" name="Bank id" value="Bank id på annan enhet">
+        </fieldset>
+    
+    <div id="ansök">
+        <p>För att boka resor här måste du vara 
+        berättigad till färdtjänst du finner mer 
+        information och kan göra din ansökan här.
+    </p>
+    <button id="ansökBtn">Ansök om färdtjänst</button>
+    </div>
+    <div id="läs mer">
+        <p>Här finner du information om färdtjänst
+            Vad färdtjänst är, hur det fungerar och 
+            vilka regler som finns.</p>
+            <button id="läsmerBtn">Läs mer</button>
+    </div>
+    </div>
+    <footer>
+        <p id="footerrubrik">Skara kommun</p>
+        <p id="footertext">Gatan 1 SKARA <br>växel 0511-320 00 <br> e-post skara@skara.se</p>
+        <p id="tillgänglighet">Tillgänglighetsredogörelse</p>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+    </footer>
+    
+</body>
+</html>

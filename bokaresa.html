@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
+    <title>Boka resa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
+        <div class="topnav" id="myTopnav">
+                    <a href="bokaresa.html" class="active">BOKA RESOR</a>
+                    <a href="minasidor.html" >MINA SIDOR</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                    <a href="info.html">INFO</a>
+                    
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Sök på färdtjänst" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+        </div>
+    
+    </header>
+    <div class="maincontent">
+        <h1 class="bokaresaHeading">BOKA RESA</h1>  
+        <section id="avresa">     
+        <fieldset class="reseForm">
+            <legend>      
+                <h2>Avresa</h2>
+            </legend>
+            <div class="frånadress"><h2>Från</h2>
+            <label for="från">Adress:</label>
+            <input type="text" autocomplete="address" name="från" id="från" placeholder="Adress:" 
+            required="required"></div>
+            <div class="tilladress"><h2>Till</h2>
+            <label for="till">Adress:</label>
+            <input type="text" autocomplete="address" id="till" name="till" placeholder="Adress:" 
+            required="required"></div>
+
+            <fieldset id="datumtid">
+                <legend>Datum och tid</legend>
+                <input type="checkbox" id="ankomst" value="ankomst">
+                <label for="ankomst">Ankomst</label>
+                <input type="checkbox" id="avgång" value="avgång">
+                <label for="avgång">Avgång</label>
+                <input type="date" class="resedatum" name="resedatum">
+                <input type="time" class="resetid" name="resetid">
+            </fieldset>
+            <div class="resefrågor">
+            <div class="hundfråga">
+                <label for="hund"> Ledar/assistenthund</label>
+            <select name="hund" id="hund" >                  
+                <option value="nej" selected="selected">Nej</option>
+                <option value="ja">Ja</option>
+            </select>           
+         </div>
+
+         <div class="medresenär"> 
+             <label for="medresenär">Medresenär</label>
+            <select name="medresenär" id="medresenär" >                  
+                <option value="nej" selected="selected">Nej</option>
+                <option value="ja">Ja</option>
+            </select>           
+         </div>
+
+         <div class="hjälpmedelfråga"> 
+             <label for="hjälpmedel">Hjälpmedel</label>
+            <select name="hjälpmedel" id="hjälpmedel" > 
+                <option value="inget">Inget </option> 
+                <option value="rullstolA">Rullstol (avancerad)</option>                
+                <option value="rullstol">Rullstol (hopfällbar)</option>
+                <option value="rollator">Rollator</option>
+            </select>
+            </div>
+        </div>
+        </fieldset>
+            <input type="submit" class="läggtill" name="lägg till" value="Lägg till">
+    </section>
+        
+    <section id="återresa">   
+        <fieldset class="reseForm">
+            <legend>      
+                <h2>Återresa</h2>
+            </legend>
+            <div class="frånadress"><h2>Från</h2>
+            <label for="från2">Adress:</label>
+            <input type="text" autocomplete="address" name="från2" id="från2" placeholder="Adress:" 
+            required="required"></div>
+            <div class="tilladress"><h2>Till</h2>
+            <label for="till2">Adress</label>
+            <input type="text" autocomplete="address" id="till2" name="till2" placeholder="Adress:" 
+            required="required"></div>
+
+            <fieldset id="datumtid2">
+                <legend>Datum och tid</legend>
+                <input type="checkbox" id="ankomst2" value="ankomst">
+                <label for="ankomst2">Ankomst</label>
+                <input type="checkbox" id="avgång2" value="avgång">
+                <label for="avgång2">Avgång</label>
+                <input type="date" class="resedatum" name="resedatum">
+                <input type="time" class="resetid" name="resetid">
+            </fieldset>
+
+            <div class="resefrågor">
+            <div class="hundfråga">
+                <label for="hund2">Ledar/assistenthund</label>
+            <select name="hund" id="hund2" >                  
+                <option value="nej" selected="selected">Nej</option>
+                <option value="ja">Ja</option>
+            </select>           
+         </div>
+
+         <div class="medresenär"> 
+             <label for="medresenär2">Medresenär</label>
+            <select name="medresenär" id="medresenär2" >                  
+                <option value="nej" selected="selected">Nej</option>
+                <option value="ja">Ja</option>
+            </select>           
+         </div>
+
+         <div class="hjälpmedelfråga"> 
+             <label for="hjälpmedel2">Hjälpmedel</label>
+            <select name="hjälpmedel" id="hjälpmedel2" > 
+                <option value="inget">Inget </option> 
+                <option value="rullstolA">Rullstol (avancerad)</option>                
+                <option value="rullstol">Rullstol (hopfällbar)</option>
+                <option value="rollator">Rollator</option>
+            </select>
+            </div>
+        </div>
+        </fieldset>
+            <input type="submit" name="lägg till" class="läggtill" value="Lägg till">
+    </section>
+        
+   
+    <button id="myBtn" class="återkommandebtn">återkommande resa <i class="fas fa-sync-alt"></i></button>
+    <button id="myBtn2" class="bokabtn">BOKA RESAN<i class="fas fa-sync-alt"></i></button>
+</div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-wrap">
+      
+      <h2>Vilka dagar vill du resa ?</h2>
+      <section class="modalEtt">
+          <h3>Från</h3>
+          <p>Skaragatan 1 <br>
+         53200 Skara <br>
+        Kl: 0830</p>
+      </section>
+      <section class="modalTvå">
+          <h3>Till</h3>
+          <p>Skaravägen 23 <br>53293 Axvall <br>
+        kl:1340</p>
+      </section>
+      <div id="veckodagar">
+      <input type="checkbox" id="måndag" value="ankomst">
+                <label for="Måndag">Måndag</label>
+                <input type="checkbox" id="tisdag" value="tisdag">
+                <label for="tisdag">Tisdag</label>
+                <input type="checkbox" id="onsdag" value="onsdag">
+                <label for="onsdag">Onsdag</label>
+                <input type="checkbox" id="torsdag" value="torsdag">
+                <label for="torsdag">Torsdag</label>
+                <input type="checkbox" id="fredag" value="fredag">
+                <label for="fredag">Fredag</label>
+                <input type="checkbox" id="lördag" value="lördag">
+                <label for="lördag">Lördag</label>
+                <input type="checkbox" id="söndag" value="söndag">
+                <label for="söndag">Söndag</label>
+            </div>
+            <div id="veckor">
+                <input type="checkbox" id="varjevecka" value="varjevecka">
+                <label for="varjevecka">Varje vecka</label>
+                <input type="checkbox" id="varannan" value="varannan">
+                <label for="varannan">Varannan</label></div>
+                <div id="avsluta">
+                <h3>Avsluta upprepning</h3>
+                <input type="date" class="resedatum" name="resedatum">
+                </div>
+                <span class="close" >ok</span>
+            </div>
+    </div>
+  
+  </div>
+  <div id="myModal2" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-wrap">
+            <span class="close2" id="tillbakabtn"><i class="fas fa-arrow-left">Tillbaka</i></span>
+      <h2>Kontrollera så att allt stämmer!</h2>
+      <section class="modalEtt">
+          <h3>Från</h3>
+          <p>Skaragatan 1 <br>
+         53200 Skara <br>
+         Den: 1/2-2020 <br>
+        Kl: 0830</p>
+      </section>
+      <section class="modalTvå">
+          <h3>Till</h3>
+          <p>Skaravägen 23 <br>53293 Axvall <br>
+            Den: 1/2-2020 <br>
+        Kl:1340</p>
+      </section>
+      <section id="modal2Info">
+          1 Medresenär <br>
+          1 hjälpmedel - rollator <br>          
+      </section>      
+      <span class="close" id="modal2btn">BEKRÄFTA BOKNING </span>    
+    </div>  
+  </div>
+  </div>
+
+  <div id="myModal3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-wrap">
+        
+  <h1 id="bokningInfo">Din bokning är genomförd</h1>   
+  <span class="close3" ><i class="fas fa-arrow-left">Tillbaka</i></span>
+</div>  
+</div>
+</div>
+
+<div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
+    <footer id="footer">
+        <div>
+        <p id="footerrubrik">Skara kommun</p>
+        <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
+        <p id="tillg">Tillgänglighetsredogörelse</p>
+        <div id="socialicons"><i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i></div>
+    </footer>
+    <script src="js/main.js"></script>   
+</body>
+</html>

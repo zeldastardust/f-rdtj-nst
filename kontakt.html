@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
+    <title>Kontakt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
+        <div class="topnav" id="myTopnav">
+                    <a href="bokaresa.html" >BOKA RESOR</a>
+                    <a href="minasidor.html" >MINA SIDOR</a>
+                    <a href="kontakt.html" class="active">KONTAKT</a>
+                    <a href="info.html">INFO</a>
+                    
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Sök på färdtjänst" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+        </div>
+    </header>
+    <div class="maincontent">
+        
+        <h1 class="bokaresaHeading">KONTAKTA OSS</h1> 
+        <section id="kontaktaOss">
+            
+        <h1 id="kommunH1">Skara kommun</h1>
+        <h2><i class="fas fa-map-marker-alt  "></i>Gatan 1, 532 00 SKARA <br> <i class="fas fa-phone-alt  "></i>växel 0511-320 00 <br>
+            <i class="fas fa-at  "></i> e-post skara@skara.se</h2>
+    </section>
+    <section id="kontaktformulär">
+        <fieldset id="kontaktForm" >
+            <label for="ämne">Ämne</label><br>
+            <input type="text"  name="ämne" id="ämne" placeholder="ämne" 
+            required="required"><br>
+            <label for="email">Din e-post</label><br>
+            <input type="email"  name="email" id="email" placeholder="e-post" 
+            required="required"><br>
+            <label for="meddelande">Meddelande</label><br>
+            <textarea placeholder="skriv ditt meddelande...."></textarea>
+            <input type="submit" class="skicka" name="lägg till" value="Skicka">
+        </fieldset>
+    </section>
+    </div>
+    <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
+    <footer id="footer">
+        <div>
+        <p id="footerrubrik">Skara kommun</p>
+        <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
+        <p id="tillg">Tillgänglighetsredogörelse</p>
+        <div id="socialicons"><i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i></div>
+    </footer>
+    <script src="js/main.js"></script>   
+</body>
+</html>

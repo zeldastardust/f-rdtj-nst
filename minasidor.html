@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+   
+    <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
+    <title>Boka resa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
+        <div class="topnav" id="myTopnav">
+                    <a href="bokaresa.html"  >BOKA RESOR</a>
+                    <a href="minasidor.html" class="active">MINA SIDOR</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                    <a href="info.html">INFO</a>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Sök på färdtjänst" name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+        </div>
+    
+    </header>
+        <div class="maincontent">
+            <h1 class="bokaresaHeading">MINA SIDOR</h1>
+            <section id="minauppgbackground">
+            <fieldset id="minauppg">
+            <legend><h1>Mina Uppgifter</h1></legend>
+            <div id="persinfo">
+            <div id="namn"><label for="name">Namn</label><br>
+            <input type="text" id="name" autocomplete="name" name="namn" placeholder="Fullständigt namn::" 
+            required="required"></div>
+            <br>
+            <div id="gatuadress"><label for="gatuadress">Gatuadress</label><br>
+            <input type="text" id="street-address" autocomplete="street-address" name="street-address" title="street-address" placeholder="gatuadress:" 
+            required="required"></div>
+            <br>
+            <div id="post"><label for="postnr">Postnummer</label><br>
+            <input type="text" id="postnr" name="postnr" title="postnummer" placeholder="postnummer:" 
+            required="required"></div>
+            <br>
+            <div id="ortwrap"><label for="ort">Ort</label><br>
+            <input type="text" id="ort" autocomplete="address-level1" name="ort" title="ort" placeholder="Ort:" 
+            required="required"></div>
+            <br>
+            <div id="phonewrap"><label for="telefon">Telefonnummer</label><br>
+            <input type="tel" id="telefon" name="telefon" title="telefonnummer" placeholder="telefonnummer:" 
+            required="required"></div>
+                <br>
+           <div id="altwrap"> <label for="altnr">Alternativt telfonnummer</label><br>
+            <input type="tel" id="altnr" name="telefon" placeholder="alternativt telefonnummer:" 
+            required="required"></div>
+            <br>
+            <div id="mailwrap"><label for="email">E-post adress</label><br>
+            <input type="email" id="email" name="email" placeholder="e-post adress">
+        </div>
+    </div>
+              <div id="faktinfo"> <h2>Faktureringsalternativ</h2>
+               <div id="aviwrap"><input type="checkbox" id="avi" value="avi">
+               <label for="avi">Faktura till aviseringsadress (45kr inkl. moms per faktura)</label>
+                </div>
+                <div id="mailaviwrap"><input type="checkbox" id="epost" value="e-post">
+                <label for="epost">E-postfaktura (gratis)</label>
+                        </div>
+           
+        </div>
+        <input type="submit" class="läggtill" name="lägg till" value="Spara">
+    </fieldset>
+</section>
+<section id="bokaderesorbackground">
+        <fieldset id="bokaderesor">
+            <legend><h1>Bokade resor</h1></legend>
+            <p>Klicka på resan för att se detaljer</p>
+            <table id="resor">
+                <tr>
+                    <th>Datum/ klockslag</th>
+                    <th>Till</th>
+                    <th>Från</th>
+                    
+                </tr>
+                <tr class="even">
+                <td class="dt">3/3-20</td>
+                <td>göteborgsvägen 3 skövde</td>
+                <td>skövdevägen 4 Göteborg</td>
+                <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
+                <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
+            </tr>
+            <tr class="odd">
+                <td class="dt">3/4-20</td>
+                <td>Storvägen 3 Skövde</td>
+                <td>Lillavägen 4 Göteborg</td>
+                <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
+                <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
+            </tr>
+            <tr class="even">
+                
+                <td class="dt">3/7-20</td>
+                <td>Tvärgatan 3 Skara</td>
+                <td>Skördevägen 4 Götene</td>
+                <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
+                <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
+            </tr>
+            <tr class="odd">
+                <td class="dt">3/3-20</td>
+                <td>göteborgsvägen 3 skövde</td>
+                <td>skövdevägen 4 Göteborg</td>
+                <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
+                <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
+            </tr>
+            <tr class="even">
+                <td class="dt">7/3-20</td>
+                <td>göteborgsvägen 3 skövde</td>
+                <td>skövdevägen 4 Göteborg</td>
+                <td><button  class="ändraresabtn" id="ändraresabtn">Ändra</button></td>
+                 <td><button class="raderaresabtn">Radera</button></td>   
+            </tr>
+            </table>
+        </fieldset>
+    </section>
+        </div>
+         <!-- The Modal -->
+<div id="myModal4" class="modal">
+        <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-wrap">
+      
+      <section class="modalEtt">
+          <h3>Från</h3>
+          <p>Skaragatan 1 <br>
+         53200 Skara <br>
+         Den: 1/2-2020 <br>
+        Kl: 0830</p>
+      </section>
+      <section class="modalTvå">
+          <h3>Till</h3>
+          <p>Skaravägen 23 <br>53293 Axvall <br>
+            Den: 1/2-2020 <br>
+        Kl:1340</p>
+      </section>
+      <section id="modal2Info">
+          1 Medresenär <br>
+          1 hjälpmedel - rollator <br>          
+      </section>      
+      
+    </div>  
+  </div>
+  </div>
+  <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
+        <footer id="footer">
+            <div>
+            <p id="footerrubrik">Skara kommun</p>
+            <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
+            <p id="tillg">Tillgänglighetsredogörelse</p>
+            <div id="socialicons"><i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i></div>
+        </footer>
+        <script src="js/main.js"></script>   
+</body>
+</html>
