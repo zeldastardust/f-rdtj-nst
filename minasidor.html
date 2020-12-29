@@ -38,8 +38,8 @@
             <input type="text" id="name" autocomplete="name" name="namn" placeholder="Fullständigt namn::" 
             required="required"></div>
             <br>
-            <div id="gatuadress"><label for="gatuadress">Gatuadress</label><br>
-            <input type="text" id="street-address" autocomplete="street-address" name="street-address" title="street-address" placeholder="gatuadress:" 
+            <div id="gatuadress"><label for="street-address">Gatuadress</label><br>
+            <input type="text" id="street-address"  name="street-address" title="street-address" placeholder="gatuadress:" 
             required="required"></div>
             <br>
             <div id="post"><label for="postnr">Postnummer</label><br>
@@ -47,7 +47,7 @@
             required="required"></div>
             <br>
             <div id="ortwrap"><label for="ort">Ort</label><br>
-            <input type="text" id="ort" autocomplete="address-level1" name="ort" title="ort" placeholder="Ort:" 
+            <input type="text" id="ort" autocomplete="address-level2" name="ort" title="ort" placeholder="Ort:" 
             required="required"></div>
             <br>
             <div id="phonewrap"><label for="telefon">Telefonnummer</label><br>
@@ -114,12 +114,12 @@
                 <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
                 <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
             </tr>
-            <tr class="even">
+            <tr class="even" id="row">
                 <td class="dt">7/3-20</td>
                 <td>göteborgsvägen 3 skövde</td>
                 <td>skövdevägen 4 Göteborg</td>
                 <td><button  class="ändraresabtn" id="ändraresabtn">Ändra</button></td>
-                 <td><button class="raderaresabtn">Radera</button></td>   
+                 <td><button class="raderaresabtn" id="raderaresabtn">Radera</button></td>   
             </tr>
             </table>
         </fieldset>
@@ -157,7 +157,7 @@
             <div>
             <p id="footerrubrik">Skara kommun</p>
             <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
-            <p id="tillg">Tillgänglighetsredogörelse</p>
+            <a href="tillg.html" id="tillg">Tillgänglighetsredogörelse</a>
             <div id="socialicons"><i class="fab fa-twitter-square"></i>
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-instagram-square"></i></div>

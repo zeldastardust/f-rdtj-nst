@@ -210,9 +210,7 @@ header{
   font-weight: bold;
 }
 .topnav #dropbtn{
-  background-color: #eeeeee;
-  color: #9A6593;
-  font-weight: bold;
+  text-decoration: underline #eeeeee 4px;
 }
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
@@ -225,9 +223,7 @@ header{
   display: block;
 }
 .topnav a.active {
-  background-color: #eeeeee;
-  color: #9A6593;
-  font-weight: bold;
+  text-decoration: underline #eeeeee 4px;
 }
 .bokaresaHeading{
     text-align: center;
@@ -322,7 +318,9 @@ footer p{
 #tillg{
     grid-area: 1/2/1/3;
     margin: auto auto;
+    color: rgb(255, 255, 255);
 }
+
 #socialicons{
   margin: auto auto;
   font-size: 300%;
@@ -735,7 +733,23 @@ font-size: 300%;
   color: #9A6593;
 }
 
-
+#tillginfo{
+  grid-area: 2/2/2/4;
+  background-color: rgb(255, 255, 255);
+  line-height: 1.4;
+  margin: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+ 
+  color: #131313;
+}
+#tillginfo
+h1,
+h2{
+ text-decoration: underline #9A6593 4px;
+}
 
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 850px) {

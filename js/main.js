@@ -14,16 +14,19 @@ function myFunction() {
 var modal = document.getElementById("myModal");
 var modal2=document.getElementById("myModal2");
 var modal3=document.getElementById("myModal3");
+var modal4=document.getElementById("myModal4");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
 var modal2btn =document.getElementById("modal2btn");
+var modal4btn=document.getElementById("raderaresabtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close2")[0];
 var span3 = document.getElementsByClassName("close3")[0];
+
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -37,6 +40,11 @@ btn2.onclick = function() {
 modal2btn.onclick = function() {
   modal3.style.display = "block";
 }
+// When the user clicks on the button, open the modal4
+modal4btn.onclick = function() {
+  modal4.style.display = "block";
+}
+
 
 // When the user clicks on <span> , close the modal
 span.onclick = function() {
