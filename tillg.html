@@ -14,22 +14,25 @@
 <body>
     <header>
         <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="myTopnav"><!--navigation-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
                     <a href="bokaresa.html"  >BOKA RESOR</a>
                     <a href="minasidor.html" >MINA SIDOR</a>
                     <a href="kontakt.html">KONTAKT</a>
-                    <a href="info.html">INFO</a>
+                    <a href="info.html">INFO</a><!--end of navigarion-->
                     <div class="search-container">
-                        <form action="/action_page.php">
+                        <form action="/action_page.php"><!--search bar-->
                           <input type="text" placeholder="Sök på färdtjänst" name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+                        </form><!--end of search bar-->
                       </div>
         </div>
     </header>
     <div class="maincontent">
-        <div id="tillginfo">
-         <h1>Digital tillgänglighetsredogörelse
+        <div id="tillginfo"><!--div for tillgänglighetsredogörelse-->
+         <h1>Digital tillgänglighets redogörelse
         </h1>
         <p>Vi vill att så många som möjligt ska kunna använda denna webbplatsen.
 
@@ -62,10 +65,10 @@
                             <h2>Kända brister i tillgänglighet på färdtjänst.se</h2>
                             <p>Det kan finnas vissa problem med kontrast <br> Det finns rubriker med felaktig rubrikstruktur
                             <br>Det finns element med felaktiga attribut</p><br>
-        </div>
+        </div><!--end of tillgänglighetsredogörelse div-->
     </div>
     <footer id="footer">
-        <div>
+        <div id="footinfo">
         <p id="footerrubrik">Skara kommun</p>
         <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
         <a href="tillg.html" id="tillg">Tillgänglighetsredogörelse</a>

@@ -14,16 +14,19 @@
 <body>
     <header>
         <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="myTopnav"><!--navigation-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
                     <a href="bokaresa.html"  >BOKA RESOR</a>
                     <a href="minasidor.html" class="active">MINA SIDOR</a>
                     <a href="kontakt.html">KONTAKT</a>
-                    <a href="info.html">INFO</a>
-                    <div class="search-container">
+                    <a href="info.html">INFO</a><!--end of navigation-->
+                    <div class="search-container"><!--search bar-->
                         <form action="/action_page.php">
                           <input type="text" placeholder="Sök på färdtjänst" name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+                        </form><!--end of search bar-->
                       </div>
         </div>
     
@@ -31,7 +34,7 @@
         <div class="maincontent">
             <h1 class="bokaresaHeading">MINA SIDOR</h1>
             <section id="minauppgbackground">
-            <fieldset id="minauppg">
+            <fieldset id="minauppg"><!--form for personal info-->
             <legend><h1>Mina Uppgifter</h1></legend>
             <div id="persinfo">
             <div id="namn"><label for="name">Namn</label><br>
@@ -72,60 +75,60 @@
            
         </div>
         <input type="submit" class="läggtill" name="lägg till" value="Spara">
-    </fieldset>
+    </fieldset><!--end of personal info form-->
 </section>
 <section id="bokaderesorbackground">
-        <fieldset id="bokaderesor">
+        <fieldset id="bokaderesor"><!--tabel for booked travels-->
             <legend><h1>Bokade resor</h1></legend>
             <p>Klicka på resan för att se detaljer</p>
             <table id="resor">
                 <tr>
                     <th>Datum/ klockslag</th>
-                    <th>Till</th>
-                    <th>Från</th>
+                    <th class="to">Till</th>
+                    <th class="from">Från</th>
                     
                 </tr>
                 <tr class="even">
                 <td class="dt">3/3-20</td>
-                <td>göteborgsvägen 3 skövde</td>
-                <td>skövdevägen 4 Göteborg</td>
+                <td class="to">göteborgsvägen 3 skövde</td>
+                <td class="from">skövdevägen 4 Göteborg</td>
                 <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
                 <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
             </tr>
             <tr class="odd">
                 <td class="dt">3/4-20</td>
-                <td>Storvägen 3 Skövde</td>
-                <td>Lillavägen 4 Göteborg</td>
+                <td class="to">Storvägen 3 Skövde</td>
+                <td class="from">Lillavägen 4 Göteborg</td>
                 <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
                 <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
             </tr>
             <tr class="even">
                 
                 <td class="dt">3/7-20</td>
-                <td>Tvärgatan 3 Skara</td>
-                <td>Skördevägen 4 Götene</td>
+                <td class="to">Tvärgatan 3 Skara</td>
+                <td class="from">Skördevägen 4 Götene</td>
                 <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
                 <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
             </tr>
             <tr class="odd">
                 <td class="dt">3/3-20</td>
-                <td>göteborgsvägen 3 skövde</td>
-                <td>skövdevägen 4 Göteborg</td>
+                <td class="to">göteborgsvägen 3 skövde</td>
+                <td class="from">skövdevägen 4 Göteborg</td>
                 <td><input class="ändraresabtn" type="submit" name="ändra" value="Ändra"></td>
                 <td><input class="raderaresabtn" type="submit" name="radera" value="Radera"></td>
             </tr>
             <tr class="even" id="row">
                 <td class="dt">7/3-20</td>
-                <td>göteborgsvägen 3 skövde</td>
-                <td>skövdevägen 4 Göteborg</td>
+                <td class="to">göteborgsvägen 3 skövde</td>
+                <td class="from">skövdevägen 4 Göteborg</td>
                 <td><button  class="ändraresabtn" id="ändraresabtn">Ändra</button></td>
                  <td><button class="raderaresabtn" id="raderaresabtn">Radera</button></td>   
             </tr>
             </table>
-        </fieldset>
+        </fieldset><!--end of booked travels table-->
     </section>
         </div>
-         <!-- The Modal -->
+         <!-- The Modal for booked travels-->
 <div id="myModal4" class="modal">
         <!-- Modal content -->
     <div class="modal-content">
@@ -151,10 +154,10 @@
       
     </div>  
   </div>
-  </div>
+  </div><!--end of booked travels modal-->
   <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
         <footer id="footer">
-            <div>
+            <div id="footinfo">
             <p id="footerrubrik">Skara kommun</p>
             <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
             <a href="tillg.html" id="tillg">Tillgänglighetsredogörelse</a>

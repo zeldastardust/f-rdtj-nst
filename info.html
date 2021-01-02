@@ -14,7 +14,10 @@
 <body>
     <header>
         <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="myTopnav"><!--navigation-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
                     <a href="bokaresa.html" >BOKA RESOR</a>
                     <a href="minasidor.html" >MINA SIDOR</a>
                     <a href="kontakt.html">KONTAKT</a>
@@ -22,7 +25,7 @@
                     <button class="dropbtn" id="dropbtn">INFO 
                         <i class="fas fa-caret-down"></i> 
                     </button>                  
-                         <div class="dropdown-content">
+                         <div class="dropdown-content"><!--dropdown navigation-->
                             <a href="#färdtjänst">Färdtjänst</a>
                             <a href="#vemKanFå">Vem kan få färdtjänst</a>
                             <a href="#färdtjänsttillståndet">Färdtjänsttillstånd</a>
@@ -36,20 +39,21 @@
                             <a href="#region">Regionfärdtjänstresa </a>
                             <a href="#riks">Riksfärdtjänstresa</a>
                             <a href="#vadkostar">Vad kostar en färdtjänstresa</a>
-                           </div>                 
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                           </div>  <!--end of dropdown-->               
+                    </div><!--end of navigation-->
+                   <!--search bar-->
                     <div class="search-container">
                         <form action="/action_page.php">
                           <input type="text" placeholder="Sök på färdtjänst" name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+                        </form><!--end of search bar-->
                       </div>
         </div>
     
     </header>
     <div class="maincontent">
         <h1 class="bokaresaHeading">SÅ HÄR FUNKAR FÄRDTJÄNST</h1>
+        <!--articles for info content-->
         <article id="färdtjänst">
             <h2>Färdtjänst</h2>
             <p>Färdtjänst är en del av kollektivtrafiken som beviljas efter individuell prövning, enligt
@@ -122,7 +126,7 @@
                 kasse i varje hand eller en resväska.</p>
         </article>
         <article id="ledsagare">
-            <h2>Ledsagare/medresenär/husdjur</h2>
+            <h2>Ledsagare/medresenär/ husdjur</h2>
             <p>Beviljad ledsagare får åka med utan avgift
                 för att hjälpa dig till och från fordonet samt
                 under färden. Ledsagaren ska alltid påbörja
@@ -188,7 +192,7 @@
     </div>
     <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
     <footer id="footer">
-        <div>
+        <div id="footinfo">
         <p id="footerrubrik">Skara kommun</p>
         <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
         <a href="tillg.html" id="tillg">Tillgänglighetsredogörelse</a>

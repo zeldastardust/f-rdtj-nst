@@ -6,6 +6,8 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/1e3685f81e.js" crossorigin="anonymous"></script>
     <title>Boka resa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
         </style>
@@ -13,47 +15,50 @@
 <body>
     <header>
         <img src="images/logo.svg" id="logo" alt="text färdtjänst"> 
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="myTopnav"><!--navigation-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
                     <a href="bokaresa.html" class="active">BOKA RESOR</a>
                     <a href="minasidor.html" >MINA SIDOR</a>
                     <a href="kontakt.html">KONTAKT</a>
-                    <a href="info.html">INFO</a>
+                    <a href="info.html">INFO</a><!--end of navigation-->
                     
-                    <div class="search-container">
+                    <div class="search-container"><!--search bar-->
                         <form action="/action_page.php">
                           <input type="text" placeholder="Sök på färdtjänst" name="search">
                           <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                      </div>
+                      </div><!--end of search bar-->
         </div>
     
     </header>
-    <div class="maincontent">
+    <div class="maincontent"><!--maincontent for pages-->
         <h1 class="bokaresaHeading">BOKA RESA</h1>  
-        <section id="avresa">     
+        <section id="avresa">   <!--section for departure booking-->  
         <fieldset class="reseForm">
             <legend>      
                 <h2>Avresa</h2>
             </legend>
-            <div class="frånadress"><h2>Från</h2>
-            <label for="från">Adress:</label>
+            <div class="frånadress"><h2>Från</h2><!--departure adresses-->
+            <label for="från">Adress:</label><br>
             <input type="text" name="från" id="från" placeholder="Adress:" autocomplete="street-address"
             required="required"></div>
             <div class="tilladress"><h2>Till</h2>
-            <label for="till">Adress:</label>
+            <label for="till">Adress:</label><br>
             <input type="text"  id="till" name="till" placeholder="Adress:" autocomplete="street-address"
             required="required"></div>
 
-            <fieldset id="datumtid">
+            <fieldset id="datumtid"><!--date/time departure-->
                 <legend>Datum och tid</legend>
-                <input type="checkbox" id="ankomst" value="ankomst">
-                <label for="ankomst">Ankomst</label>
-                <input type="checkbox" id="avgång" value="avgång">
-                <label for="avgång">Avgång</label>
+                <div id="an"><input type="checkbox" id="ankomst" value="ankomst">
+                <label for="ankomst" >Ankomst</label></div>
+                <div><input type="checkbox" id="avgång" value="avgång">
+                <label for="avgång">Avgång</label></div>
                 <input type="date" class="resedatum" name="resedatum">
                 <input type="time" class="resetid" name="resetid">
             </fieldset>
-            <div class="resefrågor">
+            <div class="resefrågor"><!--question dog-->
             <div class="hundfråga">
                 <label for="hund"> Ledar/assistenthund</label>
             <select name="hund" id="hund" >                  
@@ -63,7 +68,7 @@
          </div>
 
          <div class="medresenär"> 
-             <label for="medresenär">Medresenär</label>
+             <label for="medresenär">Medresenär</label><!--question co traveller-->
             <select name="medresenär" id="medresenär" >                  
                 <option value="nej" selected="selected">Nej</option>
                 <option value="ja">Ja</option>
@@ -71,7 +76,7 @@
          </div>
 
          <div class="hjälpmedelfråga"> 
-             <label for="hjälpmedel">Hjälpmedel</label>
+             <label for="hjälpmedel">Hjälpmedel</label><!--question aid-->
             <select name="hjälpmedel" id="hjälpmedel" > 
                 <option value="inget">Inget </option> 
                 <option value="rullstolA">Rullstol (avancerad)</option>                
@@ -82,14 +87,14 @@
         </div>
         </fieldset>
             <input type="submit" class="läggtill" name="lägg till" value="Lägg till">
-    </section>
+    </section><!--end of departure -->
         
-    <section id="återresa">   
+    <section id="återresa">  <!--section for return trip--> 
         <fieldset class="reseForm">
             <legend>      
                 <h2>Återresa</h2>
             </legend>
-            <div class="frånadress"><h2>Från</h2>
+            <div class="frånadress"><h2>Från</h2><!--addresses for return trip-->
             <label for="från2">Adress:</label>
             <input type="text"  name="från2" id="från2" placeholder="Adress:" autocomplete="street-address"
             required="required"></div>
@@ -98,7 +103,7 @@
             <input type="text" autocomplete="street-address" id="till2" name="till2" placeholder="Adress:" 
             required="required"></div>
 
-            <fieldset id="datumtid2">
+            <fieldset id="datumtid2"><!--date/time return trip-->
                 <legend>Datum och tid</legend>
                 <input type="checkbox" id="ankomst2" value="ankomst">
                 <label for="ankomst2">Ankomst</label>
@@ -109,7 +114,7 @@
             </fieldset>
 
             <div class="resefrågor">
-            <div class="hundfråga">
+            <div class="hundfråga"><!--question dog-->
                 <label for="hund2">Ledar/assistenthund</label>
             <select name="hund" id="hund2" >                  
                 <option value="nej" selected="selected">Nej</option>
@@ -117,7 +122,7 @@
             </select>           
          </div>
 
-         <div class="medresenär"> 
+         <div class="medresenär"> <!--question co traveller-->
              <label for="medresenär2">Medresenär</label>
             <select name="medresenär" id="medresenär2" >                  
                 <option value="nej" selected="selected">Nej</option>
@@ -125,7 +130,7 @@
             </select>           
          </div>
 
-         <div class="hjälpmedelfråga"> 
+         <div class="hjälpmedelfråga"> <!-- question aid-->
              <label for="hjälpmedel2">Hjälpmedel</label>
             <select name="hjälpmedel" id="hjälpmedel2" > 
                 <option value="inget">Inget </option> 
@@ -137,14 +142,14 @@
         </div>
         </fieldset>
             <input type="submit" name="lägg till" class="läggtill" value="Lägg till">
-    </section>
+    </section><!--end of return trip section-->
         
    
     <button id="myBtn" class="återkommandebtn">återkommande resa <i class="fas fa-sync-alt"></i></button>
     <button id="myBtn2" class="bokabtn">BOKA RESAN<i class="fas fa-sync-alt"></i></button>
-</div>
+</div><!--end of maincontent-->
 
-    <!-- The Modal -->
+    <!-- The Modal for recurrent trips-->
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
@@ -164,7 +169,7 @@
         kl:1340</p>
       </section>
       <div id="veckodagar">
-      <input type="checkbox" id="måndag" value="ankomst">
+      <input type="checkbox" id="måndag" value="ankomst"><!--days for recurrent trip-->
                 <label for="Måndag">Måndag</label>
                 <input type="checkbox" id="tisdag" value="tisdag">
                 <label for="tisdag">Tisdag</label>
@@ -192,8 +197,8 @@
             </div>
     </div>
   
-  </div>
-  <div id="myModal2" class="modal">
+  </div><!--end of modal recurrent trips-->
+  <div id="myModal2" class="modal"><!--modal for checking trip-->
 
     <!-- Modal content -->
     <div class="modal-content">
@@ -220,9 +225,9 @@
       <span class="close" id="modal2btn">BEKRÄFTA BOKNING </span>    
     </div>  
   </div>
-  </div>
+  </div><!--end of checking modal-->
 
-  <div id="myModal3" class="modal">
+  <div id="myModal3" class="modal"><!--confirmation modal-->
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-wrap">
@@ -231,11 +236,11 @@
   <span class="close3" ><i class="fas fa-arrow-left">Tillbaka</i></span>
 </div>  
 </div>
-</div>
+</div><!--end of confirmation modal-->
 
 <div ><a href="#logo"><i id="arrow" class="fas fa-arrow-circle-up"></i></a></div>
     <footer id="footer">
-        <div>
+        <div id="footinfo">
         <p id="footerrubrik">Skara kommun</p>
         <p id="footertext">Gatan 1 SKARA <br>växel: 0511-320 00 <br> e-post: skara@skara.se</p></div>
         <a href="tillg.html" id="tillg">Tillgänglighetsredogörelse</a>
